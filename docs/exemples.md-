@@ -1,0 +1,92 @@
+# Exemples
+
+A continuació es mostren alguns exemples d'ús del servei de geocodificació de l'ICGC:
+
+## Cercar una adreça postal 
+Indicant "nou 10, Girona" en la petició, obtenim les coordenades geogràfiques de l'adreça postal "Carrer Nou 10, Girona": 2.82176174,41.98273154:
+
+Petició: [https://eines.icgc.cat/geocodificador/autocompletar?text=nou 10,girona&size=1&layers=address](https://eines.icgc.cat/geocodificador/autocompletar?text=nou 10,girona&size=1&layers=address)
+
+Resposta: ![](img/autocompletar-address.png)
+
+## Cercar un topònim
+Indicant "can massot,fornells" en la petició, obtenim les coordenades geogràfiques del topònim "Can Massot, Fornells de la Selva": 2.79217122,41.92888483:
+
+Petició: [https://eines.icgc.cat/geocodificador/autocompletar?text=can%C2%A0massot,fornells&layers=tops&size=1](https://eines.icgc.cat/geocodificador/autocompletar?text=can%C2%A0massot,fornells&layers=tops&size=1)
+
+Resposta: ![](img/topo.png)
+
+## Geocodificació inversa
+Indicant les coordenades "2.82176174,41.98273154", obtenim l'adreça postal "Carrer Nou 10, Girona":
+
+Petició: [https://eines.icgc.cat/geocodificador/invers?lon=2.82176174&lat=41.98273154&size=1&layers=address](https://eines.icgc.cat/geocodificador/invers?lon=2.82176174&lat=41.98273154&size=1&layers=address)
+
+Resposta: ![](img/invers4.png)
+
+## Obtenir el llogaret al que pertany una adreça
+Al cercar una adreça postal, podem obtenir el llogaret o nucli de població al que pertany. Aquesta informació apareix al camp **llogaret** i al final del camp **label**, entre parèntesi.
+
+Per exemple, al cercar l'adreça **carrer de l'esglesia 1,la vall de boi**, obtenim els 3 portals que hi ha als nuclis de població de **Durro**, **Barruera** i **Taüll**, pertanyents al municipi **la Vall de Boí**.
+
+![](img/llogaret1.png)
+
+Petició: [https://eines.icgc.cat/geocodificador/autocompletar?text=carrer%20de%20l%27esglesia%201,la%20vall%20de%20boi&layers=address&size=6](https://eines.icgc.cat/geocodificador/autocompletar?text=carrer%20de%20l%27esglesia%201,la%20vall%20de%20boi&layers=address&size=6)
+
+Resposta: ![](img/llogaret.png)
+
+## Cercar una adreça postal segons el llogaret
+És possible indicar el nom del llogaret en la petició. 
+
+Per exemple, indicant **carrer de l'esglesia 1,durro**, restringim la cerca al portal 1 del carrer Església de Durro.
+
+Petició: [https://eines.icgc.cat/geocodificador/autocompletar?text=carrer%20de%20l%27esglesia%201,durro&layers=address
+](https://eines.icgc.cat/geocodificador/autocompletar?text=carrer%20de%20l%27esglesia%201,durro&layers=address)
+
+Resposta: ![](img/llogaret3.png)
+
+## Integració en un visor Leaflet
+A la imatge següent es mostra el visor [https://eines.icgc.cat/geocodificador_visor/](https://eines.icgc.cat/geocodificador_visor/), implementat amb Leaflet, que conté un cercador de'adreces i topònims i on a mesura que l'usuari va teclejant el text a cercar, s'envien peticions al servei de geocodificació, fins a trobar l'element desitjat i la seva ubicació al mapa.
+
+Les peticions enviades utilitzen l'operació **autocompletar** amb el paràmetre **text** contenint el text introduït per l'usuari. Un exemple d'aquestes peticions és [https://eines.icgc.cat/geocodificador/autocompletar?text=nou%203&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=nou%203&layers=topo1%2Ctopo2%2Caddress&size=5)
+
+A [Visor amb consultes al servei Geocodificació ICGC](visor.md) s'explica en detall com accedir al visor i com s'ha implementat.
+
+Es pot descarregar de:  [https://github.com/OpenICGC/leaflet-geocodericgc-plugin](https://github.com/OpenICGC/leaflet-geocodericgc-plugin) 
+![](img/visor.gif)
+
+## Prioritzar els resultats més propers a un punt
+Al visor anterior [https://eines.icgc.cat/geocodificador_visor/
+](https://eines.icgc.cat/geocodificador_visor/) es pot activar la casella de priorització dels resultats més propers al centre del mapa, de manera que, si el mapa està centrat al municipi de Girona, en teclejar "Biblioteca" ens apareixen biblioteques de Girona.
+
+Una de les peticions és: [https://eines.icgc.cat/geocodificador/autocompletar?text=bibli&focus.point.lat=41.430371882652814&focus.point.lon=1.8539428710937502&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=bibli&focus.point.lat=41.430371882652814&focus.point.lon=1.8539428710937502&layers=topo1%2Ctopo2%2Caddress&size=5), on s'indica el text a cercar i el punt pel que es volen prioritzar les respostes
+![](img/visor2.gif)
+
+## Restringir la cerca dins una àrea geogràfica circular o rectangular
+A la imatge es mostra l'aplicació [Vissir](http://srv.icgc.cat/vissir3/), on s'ha fet una petició al geocodificador per a obtenir el topònims que contenen el text **biblioteca**' amb coordenades dins el rectangle indicat.
+
+A la petició s'indiquen les coordenades del rectangle i el text a cercar: [https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&layers=topo1,topo2&size=300&boundary.rect.min_lon=2.790885602127&boundary.rect.min_lat=41.951744582496&boundary.rect.max_lon=2.847448636407&boundary.rect.max_lat=42.012358869945](https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&layers=topo1,topo2&size=300&boundary.rect.min_lon=2.790885602127&boundary.rect.min_lat=41.951744582496&boundary.rect.max_lon=2.847448636407&boundary.rect.max_lat=42.012358869945)
+![](img/cerca_rectangle.png)
+
+
+## Filtrar segons tipus de topònim.
+És possible indicar els tipus de topònim a cercar.
+
+Per exemple, la petició següent cerca 3 topònims de tipus **Cim** amb el text **aliga**: [http://eines.icgc.cat/geocodificador/autocompletar?text=aliga&layers=topo_tipus_08&size=3](http://eines.icgc.cat/geocodificador/autocompletar?text=aliga&layers=topo_tipus_08&size=3) .
+
+Com es veu a l'exemple, el tipus de topònim **Cim** té l'identificador **topo_tipus_08**.
+
+La taula amb els tipus de topònim i els seus identificadors es pot consultar a [Taula topònims](tipusToponims.md)
+
+
+
+## Filtrar per comarca o per municipi.
+Es possible restringir la cerca a una comarca o un municipi, indicant els paràmere **com** o **mun**.
+
+El paràmetre **com** permet especificar el nom de la comarca o el seu identificador. Es pot consultar el llistat de comarques a [https://www.idescat.cat/codis/?id=50&n=10](https://www.idescat.cat/codis/?id=50&n=10)
+
+El paràmetre **mun** permet especificar el nom del municipi o el seu identificador. Es pot consultar el llistat de municipis a [https://www.idescat.cat/codis/?id=50&n=10](https://www.idescat.cat/codis/?id=50&n=9)
+
+Per exemple, la petició [https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&mun=girona](https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&mun=girona) cerca biblioteques del municipi de Girona
+
+i la petició [https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&com=girones](https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&com=girones)  cerca biblioteques de la comarca del Gironès
+
