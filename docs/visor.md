@@ -1,6 +1,6 @@
 # 1.6 Visor de mapes amb consultes al Geocodificador ICGC
 
-El visor [https://eines.icgc.cat/geocodificador_visor/](https://eines.icgc.cat/geocodificador_visor/) és un exemple d'ús del geocodificador ICGC, amb peticions de geocodificació directa i inversa.
+El visor [https://eines.icgc.cat/geocodificador_visor/](https://eines.icgc.cat/geocodificador_visor/){target="_blank"} és un exemple d'ús del geocodificador ICGC, amb peticions de geocodificació directa i inversa.
 
 ![](img/visorSencer.png)
 
@@ -10,7 +10,9 @@ Conté un cercador d'adreces i topònims: a mesura que l'usuari va teclejant el 
 
 !!! note " "
 
-    Les peticions enviades utilitzen l'operació **autocompletar** amb el paràmetre **text** contenint el text introduït per l'usuari. Un exemple d'aquestes peticions és [https://eines.icgc.cat/geocodificador/autocompletar?**text=nou%203**&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=nou%203&layers=topo1%2Ctopo2%2Caddress&size=5)
+    Les peticions enviades utilitzen l'operació **autocompletar** amb el paràmetre **text** contenint el text introduït per l'usuari. 
+    
+    Un exemple d'aquestes peticions és [https://eines.icgc.cat/geocodificador/autocompletar?**text=nou%203**&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=nou%203&layers=topo1%2Ctopo2%2Caddress&size=5){target="_blank"}
 
 
 ## Geocodificació inversa
@@ -19,7 +21,9 @@ Al fer clic sobre el mapa, es fa una petició de geocodificació inversa, obteni
 
 !!! note " "
 
-    Les peticions enviades utilitzen l'operació **invers** amb els paràmetres **lon** i **lat** contenint el punt marcat per l'usuari. Un exemple d'aquestes peticions és [https://eines.icgc.cat/geocodificador/invers?lat=41.385965&lon=2.16687&size=1&layers=address](https://eines.icgc.cat/geocodificador/invers?lat=41.385965&lon=2.16687&size=1&layers=address)
+    Les peticions enviades utilitzen l'operació **invers** amb els paràmetres **lon** i **lat** contenint el punt marcat per l'usuari. 
+    
+    Un exemple d'aquestes peticions és [https://eines.icgc.cat/geocodificador/invers?**lat=41.81623479875584**&**lon=2.4224853515625004**&size=1&boundary.circle.radius=0.5&layers=topo2,address](https://eines.icgc.cat/geocodificador/invers?lat=41.81623479875584&lon=2.4224853515625004&size=1&boundary.circle.radius=0.5&layers=topo2,address){target="_blank"}
 
 
 ## Priorització de resultats
@@ -28,13 +32,15 @@ Si la casella **Prioritzar els resultats propers al centre del mapa** està acti
 
 !!! note " "
 
-    El punt central del mapa s'indica als paràmetres **focus.point.lat** i **focus.point.lon**. Un exemple de petició és  [https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca**&focus.point.lat=41.97952806717199&focus.point.lon=2.8178000450134277**&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&focus.point.lat=41.97952806717199&focus.point.lon=2.8178000450134277&layers=topo1%2Ctopo2%2Caddress&size=5)
+    El punt central del mapa s'indica als paràmetres **focus.point.lat** i **focus.point.lon**. 
+    
+    Un exemple de petició és  [https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca**&focus.point.lat=41.97952806717199&focus.point.lon=2.8178000450134277**&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&focus.point.lat=41.97952806717199&focus.point.lon=2.8178000450134277&layers=topo1%2Ctopo2%2Caddress&size=5){target="_blank"}
 
 ![](img/visorPrioritzarDoble.png)
 
 ## Tipus d'elements a cercar
 
-Els elements cercats pertanyen a un dels següents tipus (indicats al paràmetre **layers**):
+Els elements cercats pertanyen a una de les següents capes (indicades al paràmetre **layers**):
 
 * **topo1**: topònims de poblament o agrupacions de població (nom de municipi, cap de municipi, entitat de població, disseminat, barri), mostrant en primer lloc els topònims que són nom de municipi o cap de municipi.
 Apareixen a la llista de resultats amb el prefix <span style="color:green">(poblament)</span>.
@@ -57,13 +63,13 @@ Al situar el cursor sobre un element trobat de les capes **topo1** o **topo2**, 
 
 ## Descàrrega
 
-Es pot descarregar de:  [https://github.com/OpenICGC/leaflet-geocodericgc-plugin](https://github.com/OpenICGC/leaflet-geocodericgc-plugin) 
+Es pot descarregar de:  [https://github.com/OpenICGC/leaflet-geocodericgc-plugin](https://github.com/OpenICGC/leaflet-geocodericgc-plugin){target="_blank"} 
 
 ## Implementació 
 
 S'ha implementat amb la llibreria **Leaflet**, utilitzant el plugin *leaflet-geocoder-mapzen*.
 
-S’utilitza el plugin *leaflet-geocoder-mapzen* [https://www.npmjs.com/package/leaflet-geocoder-mapzen](https://www.npmjs.com/package/leaflet-geocoder-mapzen), que s’ha modificat per gestionar els paràmetres **size** i **focus**, el prefix i tooltip de cada resultat (camp **addendum.tipus** en cas dels topònims) i el nivell de zoom del mapa (camp **addendum.zoom** en cas dels topònims)
+S’utilitza el plugin *leaflet-geocoder-mapzen* [https://www.npmjs.com/package/leaflet-geocoder-mapzen](https://www.npmjs.com/package/leaflet-geocoder-mapzen){target="_blank"}, que s’ha modificat per gestionar els paràmetres **size** i **focus**, el prefix i tooltip de cada resultat (camp **addendum.tipus** en cas dels topònims) i el nivell de zoom del mapa (camp **addendum.zoom** en cas dels topònims)
 
 
 ``` js
@@ -104,7 +110,7 @@ Per inserir el visor al vostre web, copieu i enganxeu el text següent:
 ```
 
 ## Funcionalitat PWA
-El visor Leaflet [https://eines.icgc.cat/geocodificador_visor/](https://eines.icgc.cat/geocodificador_visor/) és una aplicació web progressiva (PWA) que presenta la possibilitat de ser baixada i iniciada des de la pantalla principal o el menú d'aplicacions de qualsevol dispositiu amb un navegador web.
+El visor Leaflet [https://eines.icgc.cat/geocodificador_visor/](https://eines.icgc.cat/geocodificador_visor/){target="_blank"} és una aplicació web progressiva (PWA) que presenta la possibilitat de ser baixada i iniciada des de la pantalla principal o el menú d'aplicacions de qualsevol dispositiu amb un navegador web.
 
 Per instal·lar l'aplicació, a Chrome:
 <div class="grid cards" markdown>

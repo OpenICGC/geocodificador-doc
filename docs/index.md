@@ -4,7 +4,7 @@ La **geocodificació** és el procés de convertir adreces postals, noms de lloc
 El **Geocodificador ICGC** permet obtenir les coordenades d’un lloc ubicat a Catalunya a partir de la seva adreça postal o del seu nom (topònim). També permet l'operació contrària, la **geocodificació inversa**, que consisteix a obtenir l'adreça postal o el nom del topònim més proper a una posició expressada en coordenades.
 
  
-URL de connexió: [https://eines.icgc.cat/geocodificador](https://eines.icgc.cat/geocodificador)
+URL de connexió: [https://eines.icgc.cat/geocodificador](){target="_blank"}
 
 El **Geocodificador ICGC** és una interfície de programació d'aplicacions web **API REST**, integrable en altres aplicacions, de manera que és senzill afegir un cercador d'adreces i/o topònims a un visor de mapes.
 
@@ -39,7 +39,7 @@ Disposa de les operacions següents:
 
 ## Documentació
 
-[https://eines.icgc.cat/geocodificador/api-docs/](https://eines.icgc.cat/geocodificador/api-docs/)
+[https://eines.icgc.cat/geocodificador/api-docs/](https://eines.icgc.cat/geocodificador/api-docs/){target="_blank"}
 
 ## Exemples
 
@@ -53,4 +53,8 @@ Disposa de les operacions següents:
  * [1.8 Restringir la cerca dins una àrea geogràfica circular o rectangular](ex_area.md)
  * [1.9 Filtrar segons tipus de topònim](ex_tipus.md)
  * [1.10 Filtrar per comarca o per municipi](ex_comarca_municipi.md)
+
+## Visor
+
+[Visor](visor.md)
 

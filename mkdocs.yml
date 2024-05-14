@@ -1,50 +1,90 @@
 site_name: Geocodificador ICGC
-site_url: 'http://ejemplo.com'
-site_description: Documentació i exemples Geocodificador ICGC
+site_url: https://autogitlab.icgc.local/i.fabrellas/geocodificador-doc
+site_description: Documentació i exemples servei Geocodificador ICGC
+#site_author: unitatgeostart
+extra:
+  alternate:
+      # Original Language pip install mkdocs-google-translate
+    - name: Català
+      lang: 'ca'
+      #link: '%GT_RELATIVE_URL%'  # For relative urls back to original language
+      # Extra languages
+    - name: English
+      lang: 'en'
+      #link: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?_x_tr_sl=ca&_x_tr_tl=en&_x_tr_hl=ca&_x_tr_pto=wapp'
+      link: 'http://127.0.0.1:8000/i.fabrellas/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=en&_x_tr_hl=ca&_x_tr_pto=wapp'
+    - name: Español
+      lang: 'es'
+      link: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?_x_tr_sl=ca&_x_tr_tl=es&_x_tr_hl=ca&_x_tr_pto=wapp'
+    - name: Française
+      lang: 'fr'
+      link: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?_x_tr_sl=ca&_x_tr_tl=fr&_x_tr_hl=ca&_x_tr_pto=wapp' 
+      # _x_tr_sl = source language
+      # _x_tr_tl = translation language
 theme:
-  name: material
+  name: 'material'
   language: 'ca'
-  logo: img/ICGC_color_norma.svg
-  favicon: img/favicon.ico
-  palette: 
+  logo: 'assets/icgc_gencat_logos_blanc.png'
+  favicon: assets/favicon.png
+  palette:  
+    - scheme: custom
       primary: custom
       accent: custom
+      toggle:
+        icon: material/brightness-7 
+        name: Canviar a mode fosc
+    - scheme: slate
+      primary: custom   
+      toggle:
+        icon: material/brightness-4
+        name: Canviar a mode clar
+
+  #highlightjs: true
+  # hljs_style: github
+  # nav_style: dark
+  #suppress_nextprev: true
   features:
       - navigation.tabs
-      - navigation.instant.prefetch
+    # - navigation.instant.prefetch
       - navigation.expand
       - content.code.copy
 extra_css:
   - 'stylesheets/extra.css'
 
-repo_url: 'https://github.com/nombreusuario/proyectourlongithub'
-edit_uri: edit/master
+#edit_uri: edit/master
 markdown_extensions:
-  - attr_list
-  - md_in_html   
+  #- codehilite:
+      #linenums: True
+  - admonition
+  - pymdownx.magiclink
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences 
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - admonition
-  - pymdownx.details
-    
+  #- pymdownx.critic
+  #- pymdownx.caret
+  #- pymdownx.keys
+  #- pymdownx.mark
+  #- pymdownx.tilde
+  #- pymdownx.details
+  - footnotes
+  - tables
+  - attr_list  
+  
+
+repo_url: "https://autogitlab.icgc.local/i.fabrellas/geocodificador_mkdocs"
   
 nav:
 - Inici: 
   - Geocodificador ICGC: index.md
 - Operacions:  
-  - cerca: parametres_cerca.md
-  - autocompletar: parametres_autocompletar.md
-  - invers: parametres_invers.md
+  - Cerca directa completa: parametres_cerca.md
+  - Cerca directa autocompletar: parametres_autocompletar.md
+  - Cerca inversa: parametres_invers.md
+- Documentació: documentacio.md
 - Exemples:  
   - 1.1 Cercar una adreça: ex_adreca.md
   - 1.2 Cercar un topònim: ex_toponim.md
@@ -59,6 +99,12 @@ nav:
 - Visor: visor.md
 - Referències: 
   - Tipus de topònims: tipusToponims.md
+plugins:
+  - search
+  - google-translate:
+      url: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?  # optional (required for local testing)'
+
+
 
 
 

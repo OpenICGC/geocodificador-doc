@@ -1,5 +1,9 @@
 # Tipus de topònims
 
+La taula mostra els diferents tipus de topònims, que es poden indicar per a filtrar els resultats. 
+
+Més informació a [Filtrar segons tipus de topònim](ex_tipus.md){target="_blank"}
+
 | ID      | Tipus                          | Concepte|
 | ----------- | ------------------------------------ |---|
 | 01 |Cap de municipi| Cap de municipi|

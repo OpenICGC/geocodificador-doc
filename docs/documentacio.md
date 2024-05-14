@@ -1,0 +1,1 @@
+[https://eines.icgc.cat/geocodificador/api-docs/](https://eines.icgc.cat/geocodificador/api-docs/){target="_blank"}
