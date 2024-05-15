@@ -12,13 +12,13 @@ extra:
     - name: English
       lang: 'en'
       #link: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?_x_tr_sl=ca&_x_tr_tl=en&_x_tr_hl=ca&_x_tr_pto=wapp'
-      link: 'https://github.com/OpenICGC/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=en&_x_tr_hl=ca&_x_tr_pto=wapp'
+      link: 'https://openicgc.github.io/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=en&_x_tr_hl=ca&_x_tr_pto=wapp'
     - name: Español
       lang: 'es'
-      link: 'https://github.com/OpenICGC/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=es&_x_tr_hl=ca&_x_tr_pto=wapp'
+      link: 'https://openicgc.github.io/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=es&_x_tr_hl=ca&_x_tr_pto=wapp'
     - name: Française
       lang: 'fr'
-      link: 'https://github.com/OpenICGC/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=fr&_x_tr_hl=ca&_x_tr_pto=wapp' 
+      link: 'https://openicgc.github.io/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=fr&_x_tr_hl=ca&_x_tr_pto=wapp' 
       # _x_tr_sl = source language
       # _x_tr_tl = translation language
 theme:
