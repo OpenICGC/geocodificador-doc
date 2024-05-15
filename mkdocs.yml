@@ -1,5 +1,5 @@
 site_name: Geocodificador ICGC
-site_url: https://autogitlab.icgc.local/i.fabrellas/geocodificador-doc
+site_url: https://github.com/OpenICGC/geocodificador-doc
 site_description: Documentació i exemples servei Geocodificador ICGC
 #site_author: unitatgeostart
 extra:
@@ -75,7 +75,7 @@ markdown_extensions:
   - attr_list  
   
 
-repo_url: "https://autogitlab.icgc.local/i.fabrellas/geocodificador_mkdocs"
+repo_url: "https://github.com/OpenICGC/geocodificador-doc"
   
 nav:
 - Inici: 
