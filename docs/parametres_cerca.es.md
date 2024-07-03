@@ -9,7 +9,7 @@ Es imprescindible indicar el texto a buscar en el parámetro **text**.
 
 El resultado se obtiene en formato GeoJSON.
 
-Por ejemplo, para buscar las coordenadas correspondientes a la dirección _carrer nou 10,girona_, hay que hacer la petición [https://eines.icgc.cat/geocodificador/cerca?text=carrer nou 10,girona&layers=address&size=1](https://eines.icgc.cat/geocodificador/cerca?text=carrer nou 10,girona&layers=address&size=1){target="_blank"}, que tiene la respuesta: ![](../img/cerca-adreces.png)
+Por ejemplo, para buscar las coordenadas correspondientes a la dirección _carrer nou 10,girona_, hay que hacer la petición [https://eines.icgc.cat/geocodificador/cerca?text=carrer nou 10,girona&layers=address&size=1](https://eines.icgc.cat/geocodificador/cerca?text=carrer nou 10,girona&layers=address&size=1){target="_blank"}, que tiene la respuesta: ![](img/cerca-adreces.png)
 
 ## Construcción de la consulta
 La petición al API se construye a partir de la #URL **https://eines.icgc.cat/geocodificador/cerca**, seguida del signo *?* y de la secuencia de parámetros, separados por el signo **&**.
@@ -167,9 +167,9 @@ El elemento **features.properties** tiene los campos descritos a la tabla siguie
 |Dirección postal|
 |---|
 |[https://eines.icgc.cat/geocodificador/cerca?text=nou%2010%20girona&layers=address&size=1](  https://eines.icgc.cat/geocodificador/cerca?text=nou%2010%20girona&layers=address&size=1 ){target="_blank"}
-![](../img\autocompletar-address.png)|
+![](img\autocompletar-address.png)|
 
 |Topónimo|
 |---|
 |[https://eines.icgc.cat/geocodificador/cerca?text=barranc%20de%20Barball&layers=tops&size=1](https://eines.icgc.cat/geocodificador/cerca?text=barranc%20de%20Barball&layers=tops&size=1   ){target="_blank"}
-![](../img\autocompletar-tops.png)|
+![](img\autocompletar-tops.png)|

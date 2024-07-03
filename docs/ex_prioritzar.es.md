@@ -4,4 +4,4 @@ En el visor anterior [https://eines.icgc.cat/geocodificador_visor/
 
 Un ejemplo de petición es el siguiente, donde se indican las coordenadas del punto central del mapa en los parámetros <span style="color:red">*focus.point.lat*</span> y <span style="color:red">*focus.point.lon*</span>: [https://eines.icgc.cat/geocodificador/autocompletar?text=bibli<span style="color:red">*&focus.point.lat=41.430371882652814*</span>&<span style="color:red">*focus.point.lon=1.8539428710937502*</span>&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=bibli&focus.point.lat=41.430371882652814&focus.point.lon=1.8539428710937502&layers=topo1%2Ctopo2%2Caddress&size=5){target="_blank"}, donde se indica el texto a buscar y el punto por el que se quieren priorizar las respuestas
 
-![](../img/visor2.gif)
+![](img/visor2.gif)

@@ -19,7 +19,7 @@ Dado que las peticiones a **autocompletar** generalmente responden directamente 
 
 También es necesario tener en cuenta que las respuestas pueden ser asíncronas y no ser respondidas en el mismo orden en que se enviaron.
 
-Para buscar las coordenadas correspondientes al topónimo _can masso,barcelona_ hay que hacer la petición [https://eines.icgc.cat/geocodificador/autocompletar?text=can%20masso,barcelona&layers=tops&size=1](https://eines.icgc.cat/geocodificador/autocompletar?text=can%20masso,barcelona&layers=tops&size=1){target="_blank"}, que tiene la respuesta: ![](../img/autocompletar1.png)
+Para buscar las coordenadas correspondientes al topónimo _can masso,barcelona_ hay que hacer la petición [https://eines.icgc.cat/geocodificador/autocompletar?text=can%20masso,barcelona&layers=tops&size=1](https://eines.icgc.cat/geocodificador/autocompletar?text=can%20masso,barcelona&layers=tops&size=1){target="_blank"}, que tiene la respuesta: ![](img/autocompletar1.png)
 
 ## Construcción de la consulta
 La petición al APIOse construye a partir de la #URL **https://eines.icgc.cat/geocodificador/autocompletar**, seguida del signo *?* y de la secuencia de parámetros, separados por el signo **&**.
@@ -176,11 +176,11 @@ El elemento **features.properties** tiene los campos descritos a la tabla siguie
 |Dirección postal|
 |---|
 |[https://eines.icgc.cat/geocodificador/autocompletar?text=nou%2010%20girona&layers=address&size=1](  https://eines.icgc.cat/geocodificador/autocompletar?text=nou%2010%20girona&layers=address&size=1 ){target="_blank"}
-![](../img\autocompletar-address.png)|
+![](img\autocompletar-address.png)|
 
 |Topónimo|
 |---|
 |[https://eines.icgc.cat/geocodificador/autocompletar?text=barranc%20de%20Barball&layers=tops&size=1](#https://herramientas.icgc.cat/geocodificador/autocompletar?texto=Barranco%20de%20Barball&layers=tops&size=1   ){target="_blank"}
-![](../img\autocompletar-tops.png)|
+![](img\autocompletar-tops.png)|
 
 

@@ -8,4 +8,4 @@ Por ejemplo, indicando **carrer de l'esglesia 1,durro**, restringimos la búsque
 
 La respuesta es :
 
- ![](../img/llogaret3.png)
+ ![](img/llogaret3.png)

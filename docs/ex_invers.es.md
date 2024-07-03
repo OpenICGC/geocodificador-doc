@@ -6,4 +6,4 @@ Por ejemplo, indicando las coordenadas <span style="color:red">*2.82176174, 41.9
 
 El resultado es:
 
-![](../img/invers4.png)
+![](img/invers4.png)

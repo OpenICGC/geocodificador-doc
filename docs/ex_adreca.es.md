@@ -8,4 +8,4 @@ Por ejemplo, indicando <span style="color:red">*nou 10,girona*</span>, obtenemos
 
 El resultado es:
 
-![](../img/autocompletar-address.png)
+![](img/autocompletar-address.png)

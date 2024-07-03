@@ -9,7 +9,7 @@ La operación **invers** (geocodificación inversa) busca las direcciones y top�
 El resultado se obtiene en formato GeoJSON.
 
 
-Por ejemplo, para buscar la dirección más próxima a las coordenadas _41.385965, 2.16687_, hay que hacer la petición [https://eines.icgc.cat/geocodificador/invers?lat=41.385965&lon=2.16687&size=1&layers=address](https://eines.icgc.cat/geocodificador/invers?lat=41.385965&lon=2.16687&size=1&layers=address){target="_blank"}, que tiene la respuesta: ![](../img/invers.png)
+Por ejemplo, para buscar la dirección más próxima a las coordenadas _41.385965, 2.16687_, hay que hacer la petición [https://eines.icgc.cat/geocodificador/invers?lat=41.385965&lon=2.16687&size=1&layers=address](https://eines.icgc.cat/geocodificador/invers?lat=41.385965&lon=2.16687&size=1&layers=address){target="_blank"}, que tiene la respuesta: ![](img/invers.png)
 
 ## Construcción de la consulta
 La petición al API se construye a partir de la #URL **https://eines.icgc.cat/geocodificador/invers**, seguida del signo **?** y de la secuencia de parámetros, separados por el signo **&**.
@@ -121,9 +121,9 @@ El elemento **features.properties** tiene los campos descritos a la tabla siguie
 |Dirección postal|
 |---|
 |[https://eines.icgc.cat/geocodificador/invers?lon=2.13798&lat=41.4271&layers=address&size=1](https://eines.icgc.cat/geocodificador/invers?lon=2.13798&lat=41.4271&layers=address&size=1){target="_blank"}
-![](../img\invers2.png)|
+![](img\invers2.png)|
 
 |Topónimo|
 |---|
 |[https://eines.icgc.cat/geocodificador/invers?lon=0.20949814&lat=41.12599206&layers=tops&size=1](https://eines.icgc.cat/geocodificador/invers?lon=0.20949814&lat=41.12599206&layers=tops&size=1){target="_blank"}
-![](../img\invers3.png)|
+![](img\invers3.png)|

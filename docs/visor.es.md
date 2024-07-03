@@ -2,7 +2,7 @@
 
 El visor [https://eines.icgc.cat/geocodificador_visor/](https://eines.icgc.cat/geocodificador_visor/){target="_blank"} es un ejemplo de uso del geocodificador ICGC, con peticiones de geocodificació directa e inversa.
 
-![](../img/visorSencer.png)
+![](img/visorSencer.png)
 
 ## Geocodificación directa
 
@@ -36,7 +36,7 @@ Si la casilla **Priorizar los resultados próximos al centro del mapa** está ac
     
     Un ejemplo de petición es  [https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca*&focus.point.lat=41.97952806717199&focus.point.lon=2.8178000450134277*&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&focus.point.lat=41.97952806717199&focus.point.lon=2.8178000450134277&layers=topo1%2Ctopo2%2Caddress&size=5){target="_blank"}
 
-![](../img/visorPrioritzarDoble.png)
+![](img/visorPrioritzarDoble.png)
 
 ## Tipo de elementos a buscar
 
@@ -59,7 +59,7 @@ El parámetro **size** se ha asignado a 5, para mostrar como máximo 5 elementos
 
 Al situar el cursor sobre un elemento encontrado de las capas **topo1** o **topo2**, se muestra el tipo de topónimo (campo **addendum.tipus**):
 
-![](../img/tipusToponimsVisor.png)
+![](img/tipusToponimsVisor.png)
 
 ## Descarga
 
@@ -116,9 +116,9 @@ Para instalar la aplicación, en Chrome:
 
 **Windows** 
 
-![](../img/pwa1.png)
+![](img/pwa1.png)
 
 **Android** 
 
-![](../img/pwa2.png)
+![](img/pwa2.png)
 
