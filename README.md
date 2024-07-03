@@ -1,9 +1,3 @@
-<p >
-<img src="docs/assets/cartography2.png" alt="Esquema" height="120px">
-<img src="docs/assets/ICGC_color.svg" alt="ICGC" height="100px">
-</p>
-
-
 ## Documentació Geocodificador ICGC
 
 https://openicgc.github.io/geocodificador-doc/
@@ -25,7 +19,7 @@ pip install mkdocs-material
   http://localhost:8000/
 
 - `mkdocs build`: Compila la documentació en html.
-- `mkdocs gh-deploy`: Publica la documentació a branch gh-pages.
+- `mkdocs gh-deploy`: Publica la documentació a branch gh-pages. (o `python -m mkdocs gh-deploy`)
 
 ### Editar contingut ✎
 
