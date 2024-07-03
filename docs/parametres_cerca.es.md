@@ -49,7 +49,7 @@ Los parámetros son los siguientes:
 
     . **tops**: todos los topónimos
 
-    . *topo_tipo_*_id_: topónimos del tipo _id_, donde _id_ es una cadena con números entre 1 y 22, con el 0 a la izquierda por los menores de 10. Por ejemplo: *topo_tipo_01** para buscar _Cabezas de municipio_. La tabla con los tipos de topónimo y sus identificadores se puede consultar en [Tabla topónimos](tipustoponims.md){target="_blank"}
+    . *topo_tipo_*_id_: topónimos del tipo _id_, donde _id_ es una cadena con números entre 1 y 22, con el 0 a la izquierda por los menores de 10. Por ejemplo: *topo_tipo_01** para buscar _Cabezas de municipio_. La tabla con los tipos de topónimo y sus identificadores se puede consultar en [Tabla topónimos](tipusToponims.md){target="_blank"}
 
     Se pueden indicar los valores siguientes para segregar los topónimos en dos grupos:
 
