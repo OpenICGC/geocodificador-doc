@@ -113,12 +113,14 @@ Per inserir el visor al vostre web, copieu i enganxeu el text següent:
 El visor Leaflet [https://eines.icgc.cat/geocodificador_visor/](https://eines.icgc.cat/geocodificador_visor/){target="_blank"} és una aplicació web progressiva (PWA) que presenta la possibilitat de ser baixada i iniciada des de la pantalla principal o el menú d'aplicacions de qualsevol dispositiu amb un navegador web.
 
 Per instal·lar l'aplicació, a Chrome:
-<div class="grid cards" markdown>
 
-- **Windows** 
-- ![](img/pwa1.png)
-- **Android** 
-- ![](img/pwa2.png)
+**Windows** 
 
-</div>
+![](img/pwa1.png)
+
+**Android** 
+
+![](img/pwa2.png)
+
+
 

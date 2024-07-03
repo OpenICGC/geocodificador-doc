@@ -39,3 +39,5 @@ pip install mkdocs-material
 
 - Compilar la documentació (`mkdocs build` o `python -m mkdocs build`)
 - Copiar el contingut de la carpeta `site` al servidor corresponent.
+
+## versions en varis idiomes: https://github.com/squidfunk/mkdocs-material/issues/2937

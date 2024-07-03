@@ -1,0 +1,7 @@
+# 1.7 Priorizar los resultados más próximos a un punto
+En el visor anterior [https://eines.icgc.cat/geocodificador_visor/
+](https://eines.icgc.cat/geocodificador_visor/){target="_blank"} se puede activar la casilla de priorización de los resultados más próximos al centro del mapa, de forma que, si el mapa está centrado en el municipio de Girona, al teclear <span style="color:red">*Biblioteca*</span> nos aparecen <span style="color:green">*bibliotecas de Girona*</span>.
+
+Un ejemplo de petición es el siguiente, donde se indican las coordenadas del punto central del mapa en los parámetros <span style="color:red">*focus.point.lat*</span> y <span style="color:red">*focus.point.lon*</span>: [https://eines.icgc.cat/geocodificador/autocompletar?text=bibli<span style="color:red">*&focus.point.lat=41.430371882652814*</span>&<span style="color:red">*focus.point.lon=1.8539428710937502*</span>&layers=topo1%2Ctopo2%2Caddress&size=5](https://eines.icgc.cat/geocodificador/autocompletar?text=bibli&focus.point.lat=41.430371882652814&focus.point.lon=1.8539428710937502&layers=topo1%2Ctopo2%2Caddress&size=5){target="_blank"}, donde se indica el texto a buscar y el punto por el que se quieren priorizar las respuestas
+
+![](../img/visor2.gif)

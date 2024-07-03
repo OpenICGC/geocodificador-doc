@@ -1,26 +1,24 @@
 site_name: Geocodificador ICGC
-site_url: https://autogitlab.icgc.local/i.fabrellas/geocodificador-doc
+site_url: https://github.com/OpenICGC/geocodificador-doc
+#site_url: https://autogitlab.icgc.local/i.fabrellas/geocodificador-doc
 site_description: Documentació i exemples servei Geocodificador ICGC
 #site_author: unitatgeostart
-extra:
-  alternate:
+#extra:
+ # alternate:
       # Original Language pip install mkdocs-google-translate
-    - name: Català
-      lang: 'ca'
-      #link: '%GT_RELATIVE_URL%'  # For relative urls back to original language
+  #  - name: Català
+  #    lang: 'ca'
+  #    link: 'http://127.0.0.1:8000/OpenICGC/geocodificador-doc/'
       # Extra languages
-    - name: English
-      lang: 'en'
-      #link: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?_x_tr_sl=ca&_x_tr_tl=en&_x_tr_hl=ca&_x_tr_pto=wapp'
-      link: 'http://127.0.0.1:8000/i.fabrellas/geocodificador-doc/?_x_tr_sl=ca&_x_tr_tl=en&_x_tr_hl=ca&_x_tr_pto=wapp'
-    - name: Español
-      lang: 'es'
-      link: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?_x_tr_sl=ca&_x_tr_tl=es&_x_tr_hl=ca&_x_tr_pto=wapp'
-    - name: Française
-      lang: 'fr'
-      link: 'https://openicgc-github-io.translate.goog/mapicgc-doc/?_x_tr_sl=ca&_x_tr_tl=fr&_x_tr_hl=ca&_x_tr_pto=wapp' 
-      # _x_tr_sl = source language
-      # _x_tr_tl = translation language
+      # Original Language pip install mkdocs-google-translate
+   # - name: English
+   #   lang: 'en'
+   #   link: 'http://127.0.0.1:8000/OpenICGC/geocodificador-doc/en/'
+   # - name: Español
+   #   lang: 'es'
+   #   link: es/
+      #link: 'http://127.0.0.1:8000/OpenICGC/geocodificador-doc/es/'
+
 theme:
   name: 'material'
   language: 'ca'
@@ -45,6 +43,8 @@ theme:
   #suppress_nextprev: true
   features:
       - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.path
     # - navigation.instant.prefetch
       - navigation.expand
       - content.code.copy
@@ -75,7 +75,8 @@ markdown_extensions:
   - attr_list  
   
 
-repo_url: "https://autogitlab.icgc.local/i.fabrellas/geocodificador_mkdocs"
+repo_url: https://github.com/OpenICGC/geocodificador-doc
+#repo_url: "https://autogitlab.icgc.local/i.fabrellas/geocodificador_mkdocs"
   
 nav:
 - Inici: 
