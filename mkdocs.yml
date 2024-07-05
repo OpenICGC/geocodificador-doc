@@ -11,7 +11,7 @@ extra:
       link: ' https://openicgc.github.io/geocodificador-doc/'
     - name: Español
       lang: es
-      link: ' https://openicgc.github.io/geocodificador-doc-es/'
+      link: ' https://openicgc.github.io/geocodificador-doc_es/'
 theme:
   name: 'material'
   language: ca
@@ -70,7 +70,7 @@ markdown_extensions:
 
 #repo_url: https://github.com/OpenICGC/geocodificador-doc
 #repo_url: "https://autogitlab.icgc.local/i.fabrellas/geocodificador_mkdocs"
-#repo_url: "https://github.com/OpenICGC/geocodificador-doc"
+repo_url: "https://github.com/OpenICGC/geocodificador-doc"
 
 nav:
 - Inici: 
