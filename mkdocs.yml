@@ -86,7 +86,7 @@ nav:
   - 1.3 Geocodificació inversa: ex_invers.md
   - 1.4 Obtenir el llogaret al que pertany una adreça: ex_llogaret1.md
   - 1.5 Cercar una adreça postal segons el llogaret: ex_llogaret2.md
-  - 1.6 Integració en un visor Leaflet: visor.md
+  - 1.6 Integració en un visor Leaflet: ex_visor.md
   - 1.7 Prioritzar els resultats més propers a un punt: ex_prioritzar.md
   - 1.8 Restringir la cerca dins una àrea geogràfica circular o rectangular: ex_area.md
   - 1.9 Filtrar segons tipus de topònim: ex_tipus.md
