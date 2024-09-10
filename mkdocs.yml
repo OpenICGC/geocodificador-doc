@@ -12,6 +12,11 @@ extra:
     - name: Español
       lang: es
       link: ' https://openicgc.github.io/geocodificador-doc_es/'
+    - name: English
+      lang: es
+      link: ' https://openicgc.github.io/geocodificador-doc_en/'
+
+
 theme:
   name: 'material'
   language: ca
