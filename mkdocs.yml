@@ -97,8 +97,9 @@ nav:
   - 1.9 Filtrar segons tipus de topònim: ex_tipus.md
   - 1.10 Filtrar per comarca o per municipi: ex_comarca_municipi.md
 - Visor: visor.md
-- Referències: 
+- Annex: 
   - Tipus de topònims: tipusToponims.md
+  - Històric de versions: versions.md
 
 plugins:
   - search
