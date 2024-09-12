@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc/ex_adreca/">
+        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc/ex_integracio/">
       
       
-        <link rel="prev" href="../documentacio/">
+        <link rel="prev" href="../ex_comarca_municipi/">
       
       
-        <link rel="next" href="../ex_toponim/">
+        <link rel="next" href="../visor/">
       
       
       <link rel="icon" href="../assets/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>1.1 Cercar una adreça - Geocodificador ICGC</title>
+        <title>1.11 Altres exemples d'integració - Geocodificador ICGC</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#11-cercar-una-adreca-postal" class="md-skip">
+        <a href="#16-altres-exemples-dintegracio-del-geocodificador-icgc" class="md-skip">
           Salta el contingut
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.1 Cercar una adreça
+              1.11 Altres exemples d'integració
             
           </span>
         </div>
@@ -303,7 +303,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../ex_adreca/" class="md-tabs__link">
           
   
   Exemples
@@ -644,19 +644,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ex_adreca/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -665,7 +656,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -864,10 +854,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ex_integracio/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -876,6 +875,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1033,12 +1033,87 @@
   
 
 
-<h1 id="11-cercar-una-adreca-postal">1.1 Cercar una adreça postal</h1>
-<p>Cal indicar l'adreça a cercar en el paràmetre <strong>text</strong>.</p>
-<p>Per exemple, indicant <span style="color:red"><strong>nou 10,girona</strong></span>, obtenim les coordenades geogràfiques de l'adreça postal <strong>Carrer Nou 10, Girona</strong>: <span style="color:green">2.82176174, 41.98273154</span>: 
-<a href="https://eines.icgc.cat/geocodificador/autocompletar?text=nou 10,girona&amp;size=1&amp;layers=address" target="_blank">https://eines.icgc.cat/geocodificador/autocompletar?text=<span style="color:red"><strong>nou 10,girona</strong></span>&amp;size=1&amp;layers=address</a></p>
-<p>El resultat és:</p>
-<p><img alt="" src="../img/autocompletar-address.png" /></p>
+<h1 id="16-altres-exemples-dintegracio-del-geocodificador-icgc">1.6 Altres exemples d'integració del Geocodificador ICGC</h1>
+<p>El visor <a href="https://eines.icgc.cat/geocodificador_visor/" target="_blank">https://eines.icgc.cat/geocodificador_visor/</a> integra el servei API de geocodificació ICGC utilitzant la llibreria Leaflet.</p>
+<p>A continuació es mostren altres exemples de visors de com integrar el servei  a les vostres aplicacions amb diferents tecnologies:</p>
+<p><strong>Visor simple d'exemple - Mapbox</strong></p>
+<p>Creat amb node i jQuery. Fàcil de descarregar i personalitzar.</p>
+<p>Es pot descarregar de: <a href="https://github.com/OpenICGC/visor_demo_geocoder">https://github.com/OpenICGC/visor_demo_geocoder</a> .</p>
+<p>I per veure l'exemple de com funciona: <a href="https://openicgc.github.io/visor_demo_geocoder/#13.61/41.69589/1.88979">https://openicgc.github.io/visor_demo_geocoder/#13.61/41.69589/1.88979</a>.</p>
+<p><strong>Integració amb ESRI</strong></p>
+<p>Widget que permet integrar-ho amb ESRI.</p>
+<p>Codi del giny: <a href="https://github.com/OpenICGC/esri-geocodericgc-plugin">https://github.com/OpenICGC/esri-geocodericgc-plugin</a>.</p>
+<p>Exemple d'ús: <a href="https://openicgc.github.io/esri-geocodericgc-plugin/">https://openicgc.github.io/esri-geocodericgc-plugin/</a>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">//Widget cerca Pelias</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;js/cercadorPelias.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">//Llibreries ESRI</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;viewDiv&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://js.arcgis.com/4.14/&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">require</span><span class="p">([</span><span class="w">       </span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">       </span><span class="s2">&quot;esri/Graphic&quot;</span><span class="p">,</span><span class="w">    </span><span class="c1">//Per funcions relacionades amb cercador</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">       </span><span class="s2">&quot;esri/request&quot;</span><span class="p">,</span><span class="w">    </span><span class="c1">//Per funcions relacionades amb cercador</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">       </span><span class="s2">&quot;esri/views/MapView&quot;</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">       </span><span class="s2">&quot;esri/widgets/Search&quot;</span><span class="p">,</span><span class="w">   </span><span class="c1">//Per funcions relacionades amb cercador</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">       </span><span class="s2">&quot;esri/widgets/Search/SearchSource&quot;</span><span class="p">,</span><span class="w">  </span><span class="c1">//Per funcions relacionades amb cercador</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">       </span><span class="s2">&quot;esri/geometry/geometryEngine&quot;</span><span class="p">,</span><span class="w">  </span><span class="c1">//Per funcions relacionades amb cercador</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">       </span><span class="s2">&quot;esri/geometry/Point&quot;</span><span class="p">,</span><span class="w">  </span><span class="c1">//Per funcions relacionades amb cercador</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">       </span><span class="s2">&quot;esri/WebMap&quot;</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">       </span><span class="s2">&quot;esri/layers/Layer&quot;</span><span class="p">,</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">       </span><span class="s2">&quot;esri/layers/MapImageLayer&quot;</span><span class="p">,</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">       </span><span class="s2">&quot;esri/portal/Portal&quot;</span><span class="p">,</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">       </span><span class="s2">&quot;esri/widgets/BasemapToggle&quot;</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">     </span><span class="p">],</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="w">       </span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">       </span><span class="nx">Graphic</span><span class="p">,</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">       </span><span class="nx">esriRequest</span><span class="p">,</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">       </span><span class="nx">MapView</span><span class="p">,</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">       </span><span class="nx">Search</span><span class="p">,</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">       </span><span class="nx">SearchSource</span><span class="p">,</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">       </span><span class="nx">geometryEngine</span><span class="p">,</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">       </span><span class="nx">Point</span><span class="p">,</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">       </span><span class="nx">WebMap</span><span class="p">,</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">           </span><span class="nx">Layer</span><span class="p">,</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">       </span><span class="nx">MapImageLayer</span><span class="p">,</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">       </span><span class="nx">Portal</span><span class="p">,</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">       </span><span class="nx">BasemapToggle</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">     </span><span class="p">)...</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="p">....</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="kd">var</span><span class="w"> </span><span class="nx">searchWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Search</span><span class="p">({</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">   </span><span class="nx">view</span><span class="o">:</span><span class="w"> </span><span class="nx">view</span><span class="p">,</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">   </span><span class="c1">//Geocodificador PELIAS</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">   </span><span class="nx">sources</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">customSearchSource</span><span class="p">(</span><span class="nx">Graphic</span><span class="p">,</span><span class="nx">esriRequest</span><span class="p">,</span><span class="nx">MapView</span><span class="p">,</span><span class="nx">Search</span><span class="p">,</span><span class="nx">SearchSource</span><span class="p">,</span><span class="nx">geometryEngine</span><span class="p">,</span><span class="nx">Point</span><span class="p">)],</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">   </span><span class="nx">includeDefaultSources</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="p">});</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="c1">// Add the search widget to the top left corner of the view       </span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="nx">view</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">searchWidget</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">   </span><span class="nx">position</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;top-right&quot;</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="p">});</span>
+</span></code></pre></div>
+<p><strong>Integració amb OpenLayers</strong></p>
+<p>Es crea un control que permet integrar-ho amb OpenLayers.</p>
+<p>Codi del giny: <a href="https://github.com/OpenICGC/openlayers-geocodericgc-plugin">https://github.com/OpenICGC/openlayers-geocodericgc-plugin</a>.</p>
+<p>Exemple d'ús: <a href="https://openicgc.github.io/openlayers-geocodericgc-plugin/">https://openicgc.github.io/openlayers-geocodericgc-plugin/</a></p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">//Scripts i css que cal carregar</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">&lt;</span><span class="nx">link</span><span class="w"> </span><span class="nx">href</span><span class="o">=</span><span class="s2">&quot;css/ol-geocodericgc.css&quot;</span><span class="w"> </span><span class="nx">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.jsdelivr.net/npm/ol-geocoder&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;js/ol-geocodericgc.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">//Instanciació del control</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kd">var</span><span class="w"> </span><span class="nx">geocodericgc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">GeocoderICGC</span><span class="p">(</span><span class="s1">&#39;icgc&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w"> </span><span class="nx">placeholder</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Search for ...&#39;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w"> </span><span class="nx">targetType</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;text-input&#39;</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w"> </span><span class="nx">limit</span><span class="o">:</span><span class="w"> </span><span class="mf">5</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">});</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nx">map</span><span class="p">.</span><span class="nx">addControl</span><span class="p">(</span><span class="nx">geocodericgc</span><span class="p">);</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1">//Capturar el que retorna el geocodificador</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="nx">geocodericgc</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;addresschosen&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">){</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">feature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">evt</span><span class="p">.</span><span class="nx">feature</span><span class="p">,</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">     </span><span class="nx">coord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">evt</span><span class="p">.</span><span class="nx">coordinate</span><span class="p">,</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">     </span><span class="nx">address</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">evt</span><span class="p">.</span><span class="nx">address</span><span class="p">;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w"> </span><span class="c1">// some popup solution</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w"> </span><span class="nx">content</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&lt;p&gt;&#39;</span><span class="o">+</span><span class="w"> </span><span class="nx">address</span><span class="p">.</span><span class="nx">formatted</span><span class="w"> </span><span class="o">+</span><span class="s1">&#39;&lt;/p&gt;&#39;</span><span class="p">;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w"> </span><span class="nx">overlay</span><span class="p">.</span><span class="nx">setPosition</span><span class="p">(</span><span class="nx">coord</span><span class="p">);</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="p">});</span>
+</span></code></pre></div>
 
 
 

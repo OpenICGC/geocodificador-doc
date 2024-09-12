@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://127.0.0.1:8000/geocodificador-doc/ex_integracio/</loc>
+         <lastmod>2024-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_invers/</loc>
          <lastmod>2024-09-12</lastmod>
          <changefreq>daily</changefreq>
