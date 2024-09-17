@@ -2,97 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/documentacio/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_adreca/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_area/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_comarca_municipi/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_integracio/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_invers/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_llogaret1/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_llogaret2/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_prioritzar/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_tipus/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_toponim/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/ex_visor/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/parametres_autocompletar/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/parametres_cerca/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/parametres_invers/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/tipusToponims/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/versions/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/geocodificador-doc/visor/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
