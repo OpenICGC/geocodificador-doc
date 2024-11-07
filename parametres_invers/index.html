@@ -956,6 +956,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex_pk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.12 Cercar un punt quilomètric
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1164,7 +1185,7 @@
 <h1 id="cerca-inversa">Cerca inversa</h1>
 <p>URL de connexió: <a href="https://eines.icgc.cat/geocodificador/invers" target="_blank">https://eines.icgc.cat/geocodificador/invers</a> (GET)</p>
 <h2 id="descripcio">Descripció</h2>
-<p>L'operació <strong>invers</strong> (geocodificació inversa) cerca les adreces i topònims més propers a un punt geogràfic determinat, especificat per la seva latitud i longitud.</p>
+<p>L'operació <strong>invers</strong> (geocodificació inversa) cerca les adreces, topònims i punts quilomètrics més propers a un punt geogràfic determinat, especificat per la seva latitud i longitud.</p>
 <p>El resultat s'obté en format GeoJSON.</p>
 <p>Per exemple, per a cercar l'adreça més propera a les coordenades <em>41.385965, 2.16687</em>, cal fer la petició <a href="https://eines.icgc.cat/geocodificador/invers?lat=41.385965&amp;lon=2.16687&amp;size=1&amp;layers=address" target="_blank">https://eines.icgc.cat/geocodificador/invers?lat=41.385965&amp;lon=2.16687&amp;size=1&amp;layers=address</a>, que té la resposta: <img alt="" src="../img/invers.png" /></p>
 <h2 id="construccio-de-la-consulta">Construcció de la consulta</h2>
@@ -1188,6 +1209,7 @@
 <p>Es poden indicar els valors següents per segregar els topònims en dos grups:</p>
 <p>. <strong>topo1</strong>: topònims referents a agrupacions de població (municipis, caps de municipi, entitats de població, disseminats i barris)</p>
 <p>. <strong>topo2</strong>: resta de topònims.</p>
+<p>. <strong>pk</strong>: punts quilomètrics.</p>
 <p>Exemple, per trobar topònims: <a href="http://eines.icgc.cat/geocodificador/invers?lon=0.20949814&amp;lat=41.12599206&amp;layers=tops" target="_blank">http://eines.icgc.cat/geocodificador/invers?lon=0.20949814&amp;lat=41.12599206&amp;layers=tops</a></p>
 </li>
 <li>
@@ -1253,8 +1275,8 @@
 <td><strong>layers</strong></td>
 <td>cadena de text</td>
 <td>No</td>
-<td>Tipus d’elements a cercar: [address, tops, <em>topo_tipus_id</em>, topo1, topo2]</td>
-<td>topo1,topo2,address</td>
+<td>Tipus d’elements a cercar: [address, tops, <em>topo_tipus_id</em>, topo1, topo2, pk]</td>
+<td>topo1,topo2,address,pk</td>
 <td>address,topo1</td>
 </tr>
 <tr>
@@ -1307,28 +1329,28 @@
 </tr>
 <tr>
 <td><strong>etiqueta</strong></td>
-<td>Agregació de camps. Per adreces: carrer portal, municipi (llogaret). <em>Nota: Si el llogaret coincideix amb el municipi, no s'indica</em>. Per topònims: topònim, municipi</td>
+<td>Agregació de camps. Per adreces: carrer portal, municipi (llogaret). <em>Nota: Si el llogaret coincideix amb el municipi, no s'indica</em>. Per topònims: topònim, municipi. Per punts quilomètrics: codi_via km</td>
 <td>Tots</td>
 </tr>
 <tr>
 <td><strong>municipi</strong></td>
 <td>Municipi. En alguns topònims, no hi ha un municipi assignat i pren el valor "-"</td>
-<td>Tots</td>
-</tr>
-<tr>
-<td><strong>comarca</strong></td>
-<td>Comarca. En alguns topònims, no hi ha una comarca assignada i pren el valor "-"</td>
-<td>Adreces</td>
+<td>Adreces i topònims</td>
 </tr>
 <tr>
 <td><strong>id_municipi</strong></td>
 <td>Identificador del municipi. En alguns topònims, no hi ha un municipi assignat i pren el valor ""</td>
-<td>Tots</td>
+<td>Adreces i topònims</td>
+</tr>
+<tr>
+<td><strong>comarca</strong></td>
+<td>Comarca. En alguns topònims, no hi ha una comarca assignada i pren el valor "-"</td>
+<td>Adreces i topònims</td>
 </tr>
 <tr>
 <td><strong>id_comarca</strong></td>
 <td>Identificador de la comarca. En alguns topònims, no hi ha una comarca assignada i pren el valor ""</td>
-<td>Tots</td>
+<td>Adreces i topònims</td>
 </tr>
 <tr>
 <td><strong>llogaret</strong></td>
@@ -1343,7 +1365,7 @@
 <tr>
 <td><strong>nom</strong></td>
 <td>Nom del carrer, de l'edificació aïllada o de topònim</td>
-<td>Tots</td>
+<td>Adreces i topònims</td>
 </tr>
 <tr>
 <td><strong>tipus_via</strong></td>
@@ -1390,6 +1412,16 @@
 <td>Coordenades UTM del rectangle contenidor del carrer</td>
 <td>Adreces</td>
 </tr>
+<tr>
+<td><strong>via</strong></td>
+<td>Identificador de la via</td>
+<td>Punts quilomètrics</td>
+</tr>
+<tr>
+<td><strong>km</strong></td>
+<td>Quilòmetre (amb un decimal)</td>
+<td>Punts quilomètrics</td>
+</tr>
 </tbody>
 </table>
 <h2 id="exemples-de-sortida-segons-tipus-de-layer">Exemples de sortida segons tipus de layer</h2>
@@ -1420,6 +1452,21 @@
 </tr>
 <tr>
 <td><img alt="" src="../img/invers3.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Punt quilomètric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://eines.icgc.cat/geocodificador/invers?lon=1.90750462&amp;lat=41.78388114&amp;layers=pk&amp;size=1" target="_blank">https://eines.icgc.cat/geocodificador/invers?lon=1.90750462&amp;lat=41.78388114&amp;layers=pk&amp;size=1</a></td>
+</tr>
+<tr>
+<td><img alt="" src="../img/inverspk.png" /></td>
 </tr>
 </tbody>
 </table>
